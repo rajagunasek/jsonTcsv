@@ -18,7 +18,7 @@ def jonTcsv():
 
     # data = '{"employee_details":[{"employee_name": "James", "email": "james@gmail.com", "job_profile": "Sr. Developer"},{"employee_name": "Smith", "email": "Smith@gmail.com", "job_profile": "Project Lead"}]}'
     employee_parsed = json.loads(data)
-    emp_data = employee_parsed['employees']
+    emp_data = employee_parsed['employee_details']
 
     # open a file for writing
     employ_data = open('tmp/data.csv', 'w')
