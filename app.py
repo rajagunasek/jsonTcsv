@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, send_from_directory
 import json, csv
 
 app = Flask(__name__)
-
+app.secret_key = "!@#$%^&*QWERTYU12345678ZXCVBNSDFGHJKsdfgtyu#$%^&ERTYMJUbGTDE#e45"
 
 @app.route('/jsonTcsv', methods=["GET"])
 def jonTcsv():
